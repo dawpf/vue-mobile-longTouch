@@ -73,7 +73,7 @@ export default {
 
 ```
 
-**注：**为什么使用 `window.isClick` 而不是使用 `data` 对应的 `this.isClick`，因为使用 `this.isClick` ，执行到 `gotouchend` 时并不能立即获取在定时器中的设置的 `isClick` 的最新值，会导致执行结果同时触发了 **长按事件** 和 **点击事件**
+**注**：为什么使用 `window.isClick` 而不是使用 `data` 对应的 `this.isClick`，因为使用 `this.isClick` ，执行到 `gotouchend` 时并不能立即获取在定时器中的设置的 `isClick` 的最新值，会导致执行结果同时触发了 **长按事件** 和 **点击事件**
 
 **至此，vue 移动端 长按事件 实现**
 
